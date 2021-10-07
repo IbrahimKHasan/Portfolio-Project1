@@ -24,6 +24,17 @@ body {
 .nav-link {
   color: white !important;
 }
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fec400;
+  transition: 0.4s
+}
+.nav-item:hover::after {
+  width: 100%
+}
 .hello {
   position: absolute;
   left: 5%;
@@ -70,11 +81,6 @@ body {
   width: 100px;
   height: 100px;
 }
-#personal-info {
-  color: white;
-  font-family: "Titillium Web", sans-serif;
-  font-size: small;
-}
 .about-me {
   color: white;
   font-family: "Titillium Web", sans-serif;
@@ -100,6 +106,9 @@ body {
   width: 40%;
   height: auto;
   padding-top: 3%;
+}
+.skill-text {
+  font-size: large;
 }
 .progress {
   width: 95%;
@@ -273,7 +282,6 @@ body {
   justify-content: space-between;
   margin: auto;
   padding: 2%;
-  /* margin: auto; */
 }
 
 h4 {
@@ -431,9 +439,15 @@ footer > p {
     width: 90%;
     margin-top: 3%;
     padding-bottom: 4%;
+    display: block;
   }
   .my-services-one {
     width: 40%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    padding: 3px;
   }
   .code-icon {
     margin-bottom: 10%;
@@ -441,6 +455,8 @@ footer > p {
   }
   .my-services-two {
     width: 40%;
+    display: block;
+    margin: auto;
   }
   .project-box {
     width: 90%;
