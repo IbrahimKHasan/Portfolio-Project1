@@ -1,1 +1,1 @@
-https://ibrahimkhasan.github.io/Portfolio/
+https://ibrahimkhasan.github.io/Portfolio-Project1/
